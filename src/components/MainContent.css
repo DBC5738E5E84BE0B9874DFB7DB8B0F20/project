@@ -1,0 +1,43 @@
+.MainContent {
+  position: relative;
+  color: rgb(0,1,32);
+  text-align: center;
+  padding: 2rem;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.backgroundImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.MainContent section {
+  margin-bottom: 2rem;
+  backdrop-filter: blur(5px);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.MainContent h1, .MainContent h2 {
+  color: #4CAF50;
+}
+
+@media (max-width: 768px) {
+  .MainContent {
+    padding: 1rem;
+  }
+
+  .MainContent section {
+    padding: 1rem;
+  }
+}

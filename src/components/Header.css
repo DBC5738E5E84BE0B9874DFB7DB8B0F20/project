@@ -1,0 +1,37 @@
+.Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .Header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .Header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  .Header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  @media (max-width: 768px) {
+    .Header {
+      flex-direction: column;
+    }
+    
+    .Header nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+    
